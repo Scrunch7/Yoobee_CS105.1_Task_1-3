@@ -12,12 +12,12 @@ void menu();
 //parent class
 class Shapes {
 
-	double calc_result, height, width, radius;
+	double calcResult, height, width, radius;
 
 public:
 
 	Shapes() {
-		calc_result = height = width = radius = 0;
+		calcResult = height = width = radius = 0;
 	}
 
 	double calculatePerimeter(double height, double width) {
@@ -27,7 +27,7 @@ public:
 		return result;
 	}
 
-	//overloaded function for rectangles and squares
+	//overloaded function for rectangles
 	double calculateArea(double height, double width) {
 		double result = 0;
 		result = height * width;
@@ -44,7 +44,11 @@ public:
 	}
 
 	void giveResult() {
-		cout << calc_result;
+		cout << calcResult;
+	}
+
+	void setResult(double input) {
+		calcResult = input;
 	}
 
 	double getData() {
@@ -53,9 +57,6 @@ public:
 		return input;
 	}
 
-	void setResult(double input) {
-		calc_result = input;
-	}
 };
 
 
