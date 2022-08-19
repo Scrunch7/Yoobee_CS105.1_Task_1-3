@@ -180,13 +180,13 @@ void area() {
 		circle.calculateArea(radius);
 		cout << "\nThe result is: ";
 		circle.giveResult();
-		cout << " square centimeters (sq.cm)\n"; 
+		cout << " square centimeters (sq.cm)\n";
 		break;
 
 	case TRIANGLE:
 		cout << "Please enter the height of the triangle in centimeters: ";
 		height = triangle.getData();
-		cout << "Please enter the width of the triangle in centimeters: ";
+		cout << "Please enter the base of the triangle in centimeters: ";
 		width = triangle.getData();
 		triangle.calculateArea(height, width);
 		cout << "\nThe result is: ";
@@ -238,7 +238,7 @@ void perimeter() {
 	case TRIANGLE:
 		cout << "Please enter the height of the triangle in centimeters: ";
 		height = triangle.getData();
-		cout << "Please enter the width of the triangle in centimeters: ";
+		cout << "Please enter the base of the triangle in centimeters: ";
 		width = triangle.getData();
 		triangle.calculatePerimeter(height, width);
 		cout << "\nThe result is: ";
